@@ -50,16 +50,18 @@ All colors live as CSS variables at the top of `index.html` (`:root`) — change
   `https://app.acuityscheduling.com/schedule/97141816` (embedded calendar + direct-link fallback).
 - **Map:** Google Maps embed (no API key needed) pinned to `3120 Fairview Park Dr, Falls Church, VA 22042`.
 
-## ⚠️ Important: swap in your real content
+## Photos — real Instagram content (installed ✓)
 
-Because Instagram requires login to access post media, the site currently uses **professional placeholder photos** from Unsplash. Replace them with your actual brand photos for the final version:
+All imagery is now **real, pulled from [@corebeautyhub](https://www.instagram.com/corebeautyhub/)** and stored in `assets/`:
 
-### Photos
-1. Save your Instagram photos into the `assets/` folder (e.g. `assets/hero.jpg`, `assets/gallery-1.jpg`, …).
-2. In `index.html`, find the `<img src="https://images.unsplash.com/...">` tags and replace each `src` with your local path, e.g. `src="assets/gallery-1.jpg"`.
-   - Hero photo: search for `class="hero-photo"`
-   - About photo (of Nur): search for `class="about-photo"`
-   - Gallery: search for `class="gallery-grid"` (8 images)
+| File | Used for |
+|------|----------|
+| `logo.jpg` / `favicon.jpg` | Brand logo (nav, footer, browser tab) |
+| `hero.jpg` | Hero — glow-profile result |
+| `nur.jpg` | About — portrait of Nur |
+| `lips.jpg`, `client.jpg`, `treating.jpg`, `beforeafter.jpg`, `injection.jpg`, `pen.jpg`, `procedure.jpg`, `bwlips.jpg` | Results gallery (8 tiles) |
+
+To change any photo later, just replace the file in `assets/` (keep the same name), or point the `<img src>` in `index.html` at a new file.
 
 ### Details to confirm / personalize
 These were inferred from the public profile — please verify and edit in `index.html`:
